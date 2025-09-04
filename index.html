@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de email</title>
+  </head>
+  <body class="bg-slate-800 flex justify-center h-screen">
+    <div class="flex flex-col justify-center m-60 gap-10">
+      <main class="flex justify-center items-center shadow-slate-950">
+        <div class="bg-slate-700 rounded-lg border-2 border-slate-600 p-3">
+          <h1 class="text-center font-bold text-lg text-slate-400">
+            Validação de E-mail
+          </h1>
+          <form id="emailForm" class="flex-col gap-y-4">
+            <input
+              id="emailInput"
+              class="w-full mt-6 rounded-lg p-2 focus:border-slate-400"
+              type="email"
+              placeholder="Digite seu email"
+            />
+            <button
+              class="px-4 py-2 w-full text-white bg-slate-400 hover:bg-slate-600 active:bg-slate-700 mt-2 rounded-lg shadow-lg"
+              type="submit"
+            >
+              Validar
+            </button>
+          </form>
+          <p id="resultMenseger"></p>
+        </div>
+      </main>
+      <footer class="flex flex-col gap-4 items-center justify-center">
+        <h3 class="text-center text-slate-400 font-semibold">
+          Ferramentas usadas:
+        </h3>
+        <ul class="flex justify-center gap-5">
+          <li>
+            <i
+              class="ri-html5-fill text-slate-400 text-5xl opacity-50 hover:opacity-100"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="ri-css3-fill text-slate-400 text-5xl opacity-50 hover:opacity-100"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="ri-javascript-fill text-slate-400 text-5xl opacity-50 hover:opacity-100"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="ri-nodejs-line text-slate-400 text-5xl opacity-50 hover:opacity-100"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="ri-tailwind-css-fill text-slate-400 text-5xl opacity-50 hover:opacity-100"
+            ></i>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

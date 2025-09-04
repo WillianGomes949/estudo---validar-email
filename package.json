@@ -1,14 +1,18 @@
 {
-  "name": "validar-email",
-  "version": "1.0.0",
-  "description": "",
-  "main": "scripts.js",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.2"
+  },
   "dependencies": {
-    "tailwind": "^4.0.0"
+    "@tailwindcss/vite": "^4.1.12",
+    "tailwindcss": "^4.1.12"
   }
 }
